@@ -17,8 +17,8 @@ public class Runner {
 		sparkConf.set("spark.logConf", "true");
 		sparkConf.set("spark.driver.host", "localhost");
 		SparkSession sparkSession = SparkSession.builder().master("local[*]").config(sparkConf).getOrCreate();
-		//jdbc:oracle:thin:hr/hr@//localhost:1521/JP_POC_DB
-		String jdbcUrl = "jdbc:mysql://localhost:3306/JP_POC_DB";
+		//jdbc:oracle:thin:hr/hr@//localhost:1521/POC_DB
+		String jdbcUrl = "jdbc:mysql://localhost:3306/POC_DB";
 		String username = "root";
 		String password = "";
 		String dbtable = "test";
